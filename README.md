@@ -1,5 +1,5 @@
 # CMSC207_Mini-Project
-This project is a simple website built using **HTML**, **CSS**, and embedded **Java code** within the HTML file.  
+This project is a simple website About Me built using **HTML**, **CSS**, and embedded **Java code** within the HTML file.  
 It demonstrates how markup, styling, and Java logic can be combined to create interactive web content.
 
 ## 🚀 How to Run
