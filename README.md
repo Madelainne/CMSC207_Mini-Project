@@ -4,10 +4,9 @@ It demonstrates how markup, styling, and Java logic can be combined to create in
 
 ## 🚀 How to Run
 1. Download or clone the project files.
-2. Create a folder, rename as'image' in the same directory as the HTML files and include all the image assets used in the project inside this folder.
-   Make sure that the repository contains this folder so the webpages can correctly reference the images.
-4. Open `Home.html` in any web browser (e.g., Chrome, Firefox, Edge).
-5. The embedded Java code will run directly within the HTML file.
+2. Open `index.html` in any web browser (e.g., Chrome, Firefox, Edge).
+3. Fun-facts.html can interactively be opened inside index.html
+4. The embedded Java code will run directly within the HTML file.
 
 ## 📂 Project Structure
 - `Home.html` → Main webpage containing structure and embedded Java code.
