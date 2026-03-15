@@ -1,0 +1,145 @@
+header {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;       
+  background-color: #B577B5;  
+  padding-right:10px; 
+  padding-left: 20px;
+}
+header h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;           
+  margin: 0;
+  padding: 0;
+  display: flex;              
+}
+nav ul li {
+  margin-left: 20px;         
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+ }
+
+nav ul li.selected a {
+  color: #606060;             
+  background-color: yellow;    
+  padding: 2px 4px;            
+  border-radius: 2px;          
+}
+
+
+body {
+background-color: #C0C0FF;
+border: 2px solid Gray;
+border-radius: 16px;
+font-family: cursive;
+margin-left: auto;
+margin-right: auto;
+max-width: 1024px;
+min-width: 256px;
+padding-top: 8px;
+padding-bottom: 24px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+nav ul{
+list-style-type:none;
+background-color: #B577B5;
+border: none;
+border-radius: 10px;
+font-family: sans-serif;
+font-weight: bold;
+padding: 16px;
+}
+nav ul li {
+display: inline;
+border-right: 2px solid #111111;
+padding-right: 8px;
+padding-left: 8px;
+}
+nav ul li:last-child{
+border-right: none;
+}
+nav ul li a{
+text-decoration: none;
+}
+nav ul li a:hover{
+text-decoration: underline;
+}
+nav li.selected{
+color: #606060;
+}
+
+html{
+	background: radial-gradient (circles, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
+	background-size: 8px 8px;
+}
+/* Image row styling */
+.image-row {
+  display: flex;              /* puts images in a row */
+  justify-content: center;    /* centers them horizontally */
+  gap: 16px;                  /* space between images */
+  margin-top: 24px;
+}
+
+.image-row img {
+  width: 300px;   /* fixed width */
+  height: auto;   /* keeps proportions */
+  border-radius: 12px;  /* optional rounded corners */
+}
+@media (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+ article {
+  background-color: #f9f9f9;   /* light background */
+  border: 2px solid #B577B5;   /* theme-colored border */
+  border-radius: 8px;          /* rounded corners */
+  padding: 20px;               /* space inside */
+  margin: 20px auto;           /* space around + center horizontally */
+  max-width: 600px;            /* keeps it from stretching too wide */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  text-align: center;          /* center text */
+}
+
+article h2 {
+  margin-top: 0;
+  color: #B577B5;              /* theme color for heading */
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;              /* arrange links horizontally */
+  justify-content: center;    /* center them in the footer */
+}
+
+footer nav ul li {
+  margin: 0 12px;             /* spacing between links */
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;                /* white links for contrast */
+  font-weight: bold;
+  padding: 2px 4px;           /* small padding for highlight */
+  border-radius: 2px;         /* rounded highlight edges */
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline; /* underline on hover */
+}
