@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maddy's Page</title>
+<link type="text/css" rel="stylesheet"
+href="css/stylesheet.css"/>
+</head>
+<body>
+	<header>
+		<h1>Hi It's Maddy</h1>
+		<nav>
+			<ul>
+				<li class="Home.html">Get to Know Me</li>
+				
+				<li> <a href="Fun-facts.html">Fun Facts</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div class="image-row">
+				<img src="image\Me.jpg" alt="Image 1">
+				<img src="image\Me2.jpg" alt="Image 2">
+				<img src="image\Me3.jpg" alt="Image 3">
+		</div>
+	<script>
+		const images = document.querySelectorAll('.image-row img');
+
+		images.forEach(img => {
+		img.addEventListener('mouseenter', () => {
+		img.style.transform = 'scale(1.2)';
+		img.style.zIndex = '1'; 
+
+		images.forEach(other => {
+			if (other !== img) {
+			other.style.filter = 'blur(3px)';
+			}
+		});
+		});
+
+		img.addEventListener('mouseleave', () => {
+		images.forEach(other => {
+			other.style.transform = 'scale(1)';
+			other.style.filter = 'none';
+			other.style.zIndex = '0';
+		});
+		});
+	});
+	</script>
+	<article>
+		<h2>Nice to Meet you all!</h2>
+		<p>My name is <strong>Madelyn Martizano</strong>, a 29 year old Product Engineer from Agusan del Sur.</p>
+		<p>I graduated with a Bachelor's Degree of Electronics Engineering at University of Southeastern Philippines in Davao City.</p>
+		<p>I have been working from home for five years as a Semiconductor Product Engineer, collaborating with colleagues from diverse backgrounds, primarily Americans, Chinese, and Indians.</p>
+	</article>
+	<aside>
+		<section>
+			<h3>Hobbies and Interests</h3>
+			<ul>
+				<li> Travelling </li>
+					<p> I love travelling by land. It may take me longer to my destination, but I enjoy looking at the different sceneries. I also love swimming and hiking.</p>
+				<li> Coffee Shop Hopping </li>
+					<p> I can't start my day without coffee. I love the relaxing feeling I get when I smell it. I also have a friend who is equally coffe-holic, and we usually go on Coffee shop dates..</p>
+				<li> Cooking </li>
+					<p> It may not look like it, but I love cooking. I usually recreate expensive restaurant dishes as affordable home-made ones.
+		</section>
+	</aside>
+	<footer>
+		<nav>
+			<ul>
+				<li class="heading">Connect with Me</li>
+				<li>
+					<a href="mailto:madelyn@example.com">Email</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/" target="_blank">Facebook</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+
+</body>
+</html>
